@@ -1,0 +1,283 @@
+*{
+    font-family:  Montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+#wrapper{
+  max-width: 1170px;
+  margin:0 auto;
+}
+    .headline{
+      text-align: center;
+      margin-top: 50px;
+    }
+    h3{
+      font-size: 18px;
+      color: brown;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      border: 2px solid red;
+      display: inline-block;
+
+    }
+    ul.products{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      list-style: none;
+    }
+    ul.products li{
+      flex-basis: 25%;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+    ul.products li img{
+      max-width: 100%;
+      height: auto;
+      transition: all 0.3s ease-in-out;
+    }
+    ul.products li .product-top{
+      position: relative;
+      overflow: hidden;
+    }
+    ul.products li .product-top .product-thumb{
+      display: block;
+     
+    }
+    /*phóng ảnh khi hover chuôt*/
+    ul.products li:hover .product-top .product-thumb img{
+      transform:scale(1.1) ;
+    }
+    ul.products li .product-top .product-thumb img{
+      display: block;
+    }
+    ul.products li .product-top a.buy-now{
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        background-color: whitesmoke;
+        color: #333f48;
+        padding: 10px 0px;
+        position: absolute;
+        bottom: -45px;
+        width: 100%;
+        transition: 0.25S;
+        opacity: 0.85;
+    }
+    ul.products li :hover a.buy-now{
+      bottom: 0px;
+
+    }
+    ul.products li .product-info{
+      padding: 10px 0px;
+    }
+    ul.products li .product-info a{
+      display: block;
+      text-decoration: none;
+    }
+    ul.products li .product-info a.product-cat{
+      color: #FFC400;
+      font-size: 10px;
+      text-transform: uppercase;
+      padding: 3px 0px;
+
+    }
+    ul.products li .product-info a.product-name{
+      color: #333f48;
+      text-transform: uppercase;
+    }
+    ul.products li :hover a.product-name{
+      color: rgb(216, 3, 3);
+    }
+    .product-price{
+      font-weight: bold;
+    }
+    /*footer*/
+    footer{
+      padding: 0px 20px ;
+      border-top: 1px solid #212427;
+      background-color:rgb(156, 156, 179) ;
+      position: relative;
+      padding-top: 55px;
+      width: 100%;
+    }
+    .footer_heading{
+      padding: 0px 35px;
+      color: #212427;
+    }
+    .footer-list{
+      padding-left: 30px;
+      list-style: none;
+    }
+    a.footer-item__link{
+      text-decoration: none;
+      color: #333f48;
+      font-size: 1.1rem;
+      list-style: none;
+    }
+    .footer__download img{
+      padding: 0px 120px;
+      font-size: 30px;
+    }
+    .footer__download-apps img{
+        display: block;
+        font-size: 40px;
+        padding: 0px 120px;
+    }
+    .footer_heading1{
+      padding: 0px 120px;
+    }
+    .loc{
+      display: flex;
+      padding-top: 0px;
+      box-sizing: border-box;
+    
+    }
+    .loc p{
+      padding: 0px 25px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .filter-option{
+      padding: 0px 15px;
+      padding-top: 5px;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+    /*trang thoi trang nam*/
+    .banner img{
+        width: 100%;
+        height: 30rem;
+    }
+    .header {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border: 10px solid rgb(27, 189, 238);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        place-items: center;
+        background-color: #fff; /* Màu nền của header */
+        z-index: 1000; /* Đảm bảo header hiển thị trên các phần tử khác */
+      }
+      .container {
+        display: inline;
+        align-items: center;
+        justify-content: center; /* Căn giữa các phần tử trong container */
+    }
+    
+    .logo-and-menu {
+        display: flex;
+        align-items: center; /* Căn chữa các phần tử theo chiều dọc */
+    }
+    
+    .header-image {
+        width: 45px; /* Kích thước của hình ảnh logo */
+        height: auto; /* Chiều cao tự động điều chỉnh theo tỉ lệ */
+        margin-right: 20px; /* Khoảng cách với menu */
+    }
+    
+    .header-menu {
+        list-style: none; /* Ẩn dấu đầu dòng của menu */
+        margin: 0; /* Xóa các lề của menu */
+        padding: 0; /* Xóa các padding của menu */
+        display: flex; /* Hiển thị menu theo chiều ngang */
+    }
+    
+    .header-menu li {
+        margin-right: 20px; /* Khoảng cách giữa các mục menu */
+        font-weight: bold;
+    }
+    
+    .header-menu li:last-child {
+        margin-right: 0; /* Loại bỏ khoảng cách bên phải của mục cuối cùng */
+    }
+            /* Mặc định cho các chức năng trong menu */
+        .header-menu li a {
+            color: black; /* Màu chữ ban đầu */
+            transition: color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển động */
+        }
+
+        /* Khi con trỏ đi qua */
+        .header-menu li a:hover {
+            color: red; /* Màu chữ khi hover */
+            transform: scale(1.3); /* Phóng to lên 130% */
+        }
+
+      .search-form {
+        display: inline-block;
+      }
+      .search-input {
+        margin-right: 10px;
+      }
+      .header-scrolled {
+        /* Thêm các thuộc tính CSS để tùy chỉnh header khi cuộn trang */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ví dụ: Thêm bóng đổ */
+    }
+    #demo {
+        margin-top: 80px; /* Điều chỉnh giá trị này để thay đổi khoảng cách giữa header và slider */
+    }
+   
+   
+      h1 {
+          text-align: center;
+          color: #333;
+         
+      }
+      
+      #order-items {
+          list-style-type: none;
+          padding: 0;
+      }
+      
+      #order-items li {
+          margin-bottom: 10px;
+      }
+      
+      #order-items li input {
+          width: 50px;
+          margin-left: 10px;
+      }
+      
+      #cancel-order-btn {
+          background-color: #ff0000;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      
+      #cancel-order-btn:hover {
+          background-color: #cc0000;
+      }
+      #resume{
+        background-color: rgb(43, 15, 201);
+        color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      #chotconmenoluon{
+        background-color: rgb(17, 172, 30);
+        color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      
+    
